@@ -1,5 +1,4 @@
 body {
-    /* background-image: url(/images/forest.JPG); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +119,6 @@ body {
     border-radius: 12px;
     text-align: left;
     color: #8a5d70;
-    /* white-space: pre-line; */
 }
 
 
@@ -298,7 +296,7 @@ body {
         gap: 12px;
     }
 }
-/* ---------- Страница каталога резюме ---------- */
+/* Страница каталога резюме */
 .resumes-page {
     max-width: 1200px;
     margin: 0 auto;
@@ -307,7 +305,6 @@ body {
     color: #8a5d70;
 }
 
-/* Заголовок страницы */
 .resumes-heading {
     display: flex;
     justify-content: space-between;
@@ -338,7 +335,6 @@ body {
     font-size: 16px;
 }
 
-/* Кнопка "Создать резюме" */
 .home-button {
     display: inline-block;
     padding: 12px 22px;
@@ -367,7 +363,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Пустое состояние */
 .resume-empty {
     background: #fdf1f5;
     border-radius: 20px;
@@ -405,7 +400,6 @@ body {
     background: #99d1c4;
 }
 
-/* Сетка карточек */
 .resume-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -667,5 +661,235 @@ body {
 
     .home-actions {
         flex-direction: column;
+    }
+}
+/*  Детальная страница резюме */
+.resume-detail-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8a5d70;
+}
+
+.resume-back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #b7e0d6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.resume-back-link:hover {
+    color: #99d1c4;
+}
+
+.resume-detail-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(244, 180, 200, 0.25);
+    border: 1px solid #fdf1f5;
+}
+
+.resume-detail-card .resume-speciality {
+    display: inline-block;
+    background: #b7e0d6;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 0 0 15px;
+}
+
+.resume-detail-card h1 {
+    font-size: 36px;
+    color: #b57a93;
+    margin: 0 0 8px;
+}
+
+.resume-course {
+    font-size: 16px;
+    color: #c99aad;
+    margin: 0 0 20px;
+}
+
+.resume-detail-section {
+    border-top: 1px dashed #f4c8d6;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.resume-detail-section h2 {
+    font-size: 22px;
+    color: #b57a93;
+    margin: 0 0 15px;
+}
+
+.resume-detail-section p {
+    font-size: 16px;
+    color: #8a5d70;
+    margin: 10px 0;
+}
+
+.resume-detail-section strong {
+    color: #b57a93;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.resume-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.resume-skil {
+    background: #fdf1f5;
+    color: #b57a93;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #f4c8d6;
+}
+
+.resume-detail-card .home-button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 24px;
+    background: #b7e0d6;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.resume-detail-card .home-button:hover {
+    background: #99d1c4;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .resume-detail-page {
+        padding: 15px 18px 30px;
+        margin: 20px auto;
+    }
+    
+    .resume-detail-card {
+        padding: 25px 20px;
+    }
+    
+    .resume-detail-card h1 {
+        font-size: 28px;
+    }
+}
+/* Форма поиска в каталоге резюме */
+.resume-search-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(244, 180, 200, 0.15);
+    border: 1px solid #fdf1f5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    min-width: 220px; 
+}
+
+.search-field label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #b57a93;
+}
+
+.search-field input[type="text"],
+
+.search-field select {
+    height: 44px;
+    padding: 0 15px;
+    border: 1px solid #f4c8d6;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8a5d70;
+    background: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-field input[type="text"]:focus,
+.search-field select:focus {
+    outline: none;
+    border-color: #b7e0d6;
+    box-shadow: 0 0 0 3px rgba(183, 224, 214, 0.4);
+}
+
+.search-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 2px;
+}
+
+.resume-search-form .home-button {
+    padding: 11px 24px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.search-reset {
+    color: #c99aad;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.search-reset:hover {
+    color: #d97a95;
+    text-decoration: underline;
+}
+
+/* Адаптив для формы поиска */
+@media (max-width: 768px) {
+    .resume-search-form {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .search-field {
+        min-width: 100%;
+    }
+
+    .search-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .resume-search-form .home-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-reset {
+        text-align: center;
     }
 }
